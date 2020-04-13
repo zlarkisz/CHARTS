@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include flex(flex-start, space-between, column);
+
+  @include respDown('lg') {
+    max-width: 100%;
+  }
+
+  @include respDown('md') {
+    max-width: 740px;
+  }
+
+  @include respDown('sm') {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 40px 33px 33px;
+  box-sizing: border-box;
+
+  @include flex(center, flex-start, column);
+}
+
+.height {
+  min-height: 400px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
